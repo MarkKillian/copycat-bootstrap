@@ -2,6 +2,7 @@ body{
   margin:0;
   font-family: 'Open Sans', sans-serif;
   font-weight:300;
+  padding:0;
 }
 .primary-text{
   color:#47a0ce;
@@ -138,6 +139,7 @@ div[class*="col-"]{
 .suggestions .list{
   padding:0 25px 25px 25px;
   text-align:center;
+  overflow: auto;
 }
 .suggestions .list .user{
   margin:25px 0;
@@ -168,4 +170,28 @@ footer nav li a{
 }
 footer nav li a:hover{
   opacity:0.8;
+}
+
+/* META QUERIES */
+
+@media screen and (max-width:768px){
+  header .text{
+    display: none;
+  }
+  .joined{
+    display: none;
+  }
+  .actions{
+    display: none;
+  }
+  .message{
+    font-size: 150%;
+  }
+  .profile .bio{
+    margin-top: 0;
+    padding:25px 25px;
+  }
+  .col-xs-7{
+    padding-right: 0;
+  }
 }
