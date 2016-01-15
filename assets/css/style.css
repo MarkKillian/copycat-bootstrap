@@ -84,11 +84,12 @@ div[class*="col-"]{
 /* PROFILE */
 
 .profile{
-  padding:25px 25px 25px 0;
+  padding:0;
   text-align:center;
 }
 .profile .image img{
   vertical-align:middle;
+  max-width: 100%;
 }
 .profile .bio{
   margin-top:25px;
@@ -102,7 +103,7 @@ div[class*="col-"]{
 /* CONTENT */
 
 .content{
-  padding:25px;
+  padding:0 25px;
 }
 .content .stats{
   padding:20px;
@@ -134,7 +135,7 @@ div[class*="col-"]{
 /* SUGGESTIONS */
 
 .suggestions{
-  padding:25px 0 25px 25px;
+  padding:0;
 }
 .suggestions .list{
   padding:0 25px 25px 25px;
@@ -175,23 +176,20 @@ footer nav li a:hover{
 /* META QUERIES */
 
 @media screen and (max-width:768px){
-  header .text{
-    display: none;
-  }
-  .joined{
-    display: none;
-  }
-  .actions{
+  .tweets .tweet .btn{
     display: none;
   }
   .message{
     font-size: 150%;
   }
+  .profile{
+    padding:0;
+  }
   .profile .bio{
     margin-top: 0;
-    padding:25px 25px;
+    padding:25px;
   }
-  .col-xs-7{
-    padding-right: 0;
+  .content{
+    padding:25px 0;
   }
 }
